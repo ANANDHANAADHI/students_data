@@ -17,5 +17,13 @@ class StudentsDataAdmin(ImportExportModelAdmin,students_data):
     list_display = ('name', 'roll_no', 'score', 'team_no',)
 
 
+<<<<<<< Updated upstream
 # admin.site.register(students_data)
 admin.site.register(students_data, StudentsDataAdmin)
+=======
+class Students_data(students_data):
+
+	list_filter = ('roll_no',)
+	list_display = ('name','roll_no','dept','score','team_no',)
+admin.site.register(Students_data)
+>>>>>>> Stashed changes
